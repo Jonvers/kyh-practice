@@ -4,13 +4,14 @@ import random
 n = random.randint(1, 100)
 print("Jag tänker på ett nummer mellan 1 och 100. Gissa vilken?")
 
-
+def ask_number():
+    return int(input("Gissa nummmer"))
 
 
 def mainloop():
     guess = 0
     while True:
-        text = input("Din gissning: ")
+        text = ask_number()
         as_number = int(text)
         guess = guess + 1
 
