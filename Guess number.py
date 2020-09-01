@@ -1,8 +1,8 @@
 import random
 
-
 n = random.randint(1, 100)
 print("Jag tänker på ett nummer mellan 1 och 100. Gissa vilken?")
+
 
 def ask_number():
     return int(input("Gissa nummmer"))
@@ -24,6 +24,7 @@ def mainloop():
 
         if as_number > n:
             print("Fel, mitt nummer är lägre... Försök igen!")
+
 
 guess = str(mainloop())
 print("Du har gissat " + guess + " gånger")
