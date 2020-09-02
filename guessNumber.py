@@ -1,6 +1,6 @@
-import random
+from random import randint
 
-n = random.randint(1, 100)
+n = randint(1, 100)
 print("Jag tänker på ett nummer mellan 1 och 100. Gissa vilken?")
 
 
@@ -27,4 +27,4 @@ def mainloop():
 
 
 guess = str(mainloop())
-print("Du har gissat " + guess + " gånger")
+print(f"Du har gissat {guess} gånger")
