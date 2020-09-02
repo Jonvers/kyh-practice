@@ -1,5 +1,4 @@
-import calc
-from calc import subtract, multiply, divide
+from calc import add, subtract, multiply, divide
 
 
 def run():
@@ -13,7 +12,7 @@ def run():
     b = int(input("B="))
 
     if answer == "1":
-        result = calc.add(a, b)
+        result = add(a, b)
 
     if answer == "2":
         result = subtract(a, b)
