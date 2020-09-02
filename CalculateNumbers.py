@@ -1,19 +1,6 @@
+import calc
+from calc import subtract, multiply, divide
 
-def add(a, b):
-    result = a + b
-    return result
-
-def subtract(a, b):
-    result = a - b
-    return result
-
-def multiply(a, b):
-    result = a * b
-    return result
-
-def divide(a, b):
-    result = a / b
-    return result
 
 def run():
     print("This program will help with simple calculations. What do you want to do?")
@@ -26,7 +13,7 @@ def run():
     b = int(input("B="))
 
     if answer == "1":
-        result = add(a, b)
+        result = calc.add(a, b)
 
     if answer == "2":
         result = subtract(a, b)
