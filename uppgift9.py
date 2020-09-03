@@ -1,9 +1,9 @@
 import random
 
-def game():
+def game(amount):
     correct_answers = 0
 
-    for i in range(3):
+    for i in range(amount):
         a = random.randint(1, 10)
         b = random.randint(1, 10)
         while(True):
@@ -21,6 +21,12 @@ def game():
         else:
             print(f"Fel... Det blir {a+b}")
             print("---")
-    print(f"Du fick {correct_answers} av 3 rätt.")
+    print(f"Du fick {correct_answers} av {amount} rätt.")
 if __name__ == '__main__':
-    game()
+    while (True):
+        try:
+            answersAmount= int(input("Hur många frågor vill du ha?"))
+            break
+        except:
+            print("Not a number, try again")
+    game(answersAmount)
