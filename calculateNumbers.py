@@ -11,6 +11,8 @@ def run():
     a = int(input("A="))
     b = int(input("B="))
 
+    result = 0
+
     if answer == "1":
         result = add(a, b)
 
@@ -24,6 +26,7 @@ def run():
         result = divide(a, b)
 
     print(f"Result = {result}")
+
 
 if __name__ == '__main__':
     run()

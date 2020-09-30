@@ -1,6 +1,7 @@
 def is_it_too_long(name, number):
     return len(name) > number
 
+
 def main():
     try:
         number = int(input("Hur långt får namnet vara?"))
@@ -14,6 +15,7 @@ def main():
     for name in students:
         if is_it_too_long(name, number):
             print(f"{name.title()} är för långt!")
+
 
 if __name__ == '__main__':
     main()

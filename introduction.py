@@ -7,8 +7,10 @@
 def print_introduction():
     # Use a breakpoint in the code line below to debug your script.
     print(
-        f'Hej. Mitt namn är Jonathan Vernersson och jag har växt upp i Hålanda. Jag har tidigare studerat objektorienterad systemutveckling.'
-        f' \nDå har jag fokuserat på språken Java och C#, men även lärt mig mer frontendfokuserade språk som Javascript och Typescript.'
+        f'Hej. Mitt namn är Jonathan Vernersson och jag har växt upp i Hålanda.'
+        f' Jag har tidigare studerat objektorienterad systemutveckling.'
+        f' \nDå har jag fokuserat på språken Java och C#, '
+        f'men även lärt mig mer frontendfokuserade språk som Javascript och Typescript.'
         f'\nJag sökte denna utbildning för jag vill arbeta med mjukvarutestning')
 
 
